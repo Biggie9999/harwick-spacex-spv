@@ -345,6 +345,10 @@
     ═══════════════════════════════════════════ */
     .how-it-works { padding: 100px 0; background: #ffffff; }
     .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 60px; gap: 24px; }
+    .steps-grid.grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .step-val { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--ink); margin-bottom: 8px; letter-spacing: -0.02em; white-space: nowrap; }
+    .step-val.gold { color: var(--gold); }
+    .step-val.blue { color: var(--blue); }
     .step { display: flex; flex-direction: column; align-items: flex-start; text-align: left; padding: 36px 28px; background: #ffffff; position: relative; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1); border: 1px solid rgba(11,25,41,0.04); box-shadow: var(--shadow-sm); }
     .step:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(11,25,41,0.08); }
     .step-icon-box { width: 50px; height: 50px; background: var(--blue-light); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: var(--blue); }
@@ -538,6 +542,8 @@
       .trust-card { border-right: none; border-bottom: 1px solid var(--border-ink); }
       .trust-card:last-child { border-bottom: none; }
       .steps-grid { grid-template-columns: 1fr 1fr; }
+      .steps-grid.grid-3 { grid-template-columns: 1fr 1fr; }
+      .step-val { font-size: 1.8rem; }
       .step:nth-child(2) { border-right: none; }
       .step:nth-child(3) { border-top: 1px solid var(--border-ink); }
       .step:nth-child(4) { border-right: none; border-top: 1px solid var(--border-ink); }
@@ -556,6 +562,8 @@
       .nav-links.open { display: flex; }
       .nav-hamburger { display: flex; }
       .steps-grid { grid-template-columns: 1fr; }
+      .steps-grid.grid-3 { grid-template-columns: 1fr 1fr; } /* 2 cols on mobile for 6 items */
+      .step-val { font-size: 1.5rem; }
       .step { border-right: none; border-bottom: 1px solid var(--border-ink); }
       .step:last-child { border-bottom: none; }
       .form-wrap { padding: 24px 18px; }
@@ -762,34 +770,34 @@
         <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; color: var(--blue); font-style: italic;">Don't watch this one from the sidelines.</p>
       </div>
 
-      <div class="steps-grid" style="grid-template-columns: repeat(3, 1fr); margin-top: 60px;">
+      <div class="steps-grid grid-3">
         <div class="step" style="text-align: center; align-items: center; justify-content: center;">
-          <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--ink); margin-bottom: 8px; letter-spacing: -0.02em;">June 12</div>
+          <div class="step-val">June 12</div>
           <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink);">SpaceX IPO Date</div>
           <p style="font-size: 0.75rem; color: var(--ink-55); margin-top: 6px;">public debut (Nasdaq)</p>
         </div>
         <div class="step" style="text-align: center; align-items: center; justify-content: center;">
-          <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--ink); margin-bottom: 8px; letter-spacing: -0.02em;">$135</div>
+          <div class="step-val">$135</div>
           <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink);">IPO Price (SPCX)</div>
           <p style="font-size: 0.75rem; color: var(--ink-55); margin-top: 6px;">confirmed target</p>
         </div>
         <div class="step" style="text-align: center; align-items: center; justify-content: center;">
-          <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--ink); margin-bottom: 8px; letter-spacing: -0.02em;">$75B</div>
+          <div class="step-val">$75B</div>
           <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink);">IPO Size</div>
           <p style="font-size: 0.75rem; color: var(--ink-55); margin-top: 6px;">largest ever</p>
         </div>
         <div class="step" style="text-align: center; align-items: center; justify-content: center;">
-          <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--gold); margin-bottom: 8px; letter-spacing: -0.02em;">June 9</div>
+          <div class="step-val gold">June 9</div>
           <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink);">SPV Closes</div>
           <p style="font-size: 0.75rem; color: var(--ink-55); margin-top: 6px;">deadline to invest</p>
         </div>
         <div class="step" style="text-align: center; align-items: center; justify-content: center;">
-          <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--blue); margin-bottom: 8px; letter-spacing: -0.02em;">$1,500</div>
+          <div class="step-val blue">$1,500</div>
           <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink);">Your Entry Point</div>
           <p style="font-size: 0.75rem; color: var(--ink-55); margin-top: 6px;">minimum investment</p>
         </div>
         <div class="step" style="text-align: center; align-items: center; justify-content: center;">
-          <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--ink); margin-bottom: 8px; letter-spacing: -0.02em;">21,000%</div>
+          <div class="step-val">21,000%</div>
           <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink);">Tesla Early Return</div>
           <p style="font-size: 0.75rem; color: var(--ink-55); margin-top: 6px;">for illustrative purposes</p>
         </div>
@@ -1095,57 +1103,6 @@
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="faq-section" id="faq">
-  <div class="section-inner">
-    <div class="reveal">
-      <div class="section-tag">FAQ</div>
-      <h2 class="section-title">Common Questions,<br />Straight Answers</h2>
-    </div>
-    <div class="faq-list reveal">
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What is an SPV?</span><span class="faq-toggle"><i data-lucide="plus" class="icon-sm"></i></span></div>
-        <div class="faq-a"><div class="faq-a-inner">An SPV (Special Purpose Vehicle) is a legal entity created for a single investment purpose. When you invest through Liftoff Partners Fund I, your money is pooled with other investors to collectively hold an indirect interest in SpaceX. This is the same structure used by institutional investors to access private markets. You hold an interest in the SPV, which holds SpaceX interests on your behalf.</div></div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">When is SpaceX expected to start trading?</span><span class="faq-toggle"><i data-lucide="plus" class="icon-sm"></i></span></div>
-        <div class="faq-a"><div class="faq-a-inner">SpaceX officially filed for its IPO on June 4, 2026, and will trade on the NASDAQ under the ticker SPCX. Public trading is expected to begin shortly after the SEC review process is complete. Our SPV aims to secure shares at the set pre-trading price of $135/share.</div></div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What happens if the IPO is delayed or withdrawn?</span><span class="faq-toggle"><i data-lucide="plus" class="icon-sm"></i></span></div>
-        <div class="faq-a"><div class="faq-a-inner">While SpaceX has officially filed, market conditions or regulatory reviews can sometimes delay trading. If the IPO is withdrawn, your shares will remain held in the SPV until another liquidity event (such as a secondary market transaction or acquisition) occurs.</div></div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">How do I exit my investment?</span><span class="faq-toggle"><i data-lucide="plus" class="icon-sm"></i></span></div>
-        <div class="faq-a"><div class="faq-a-inner">Exits are typically triggered by a SpaceX IPO, acquisition, or a secondary market transaction facilitated by Harwick Securities. All SPV investors will be notified of any liquidity events. Early exits outside of these events are not guaranteed and may not be available. SPV interests are generally illiquid.</div></div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Is this investment risky?</span><span class="faq-toggle"><i data-lucide="plus" class="icon-sm"></i></span></div>
-        <div class="faq-a"><div class="faq-a-inner">Yes. All private market investments carry significant risk. Investing in SpaceX through this SPV involves illiquidity, market uncertainty, and the real possibility of losing your entire investment. We encourage all investors to carefully review the full offering documents and consult a qualified financial, legal, and tax advisor before investing.</div></div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What is the minimum investment?</span><span class="faq-toggle"><i data-lucide="plus" class="icon-sm"></i></span></div>
-        <div class="faq-a"><div class="faq-a-inner">You can participate starting at $1,500. This offering is structured under Regulation A+ (Tier II), which allows investments from all U.S. investors regardless of accreditation status, with no individual investment limits imposed by the exemption.</div></div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">How are investor funds held?</span><span class="faq-toggle"><i data-lucide="plus" class="icon-sm"></i></span></div>
-        <div class="faq-a"><div class="faq-a-inner">All investor funds are held in a segregated escrow account maintained by North Capital Trust Company, a qualified third-party custodian. Funds are deployed into the SPV only upon a successful closing. You will receive written confirmation and complete documentation of your SPV interest following the close date.</div></div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Who holds my money before the SPV closes?</span><span class="faq-toggle"><i data-lucide="plus" class="icon-sm"></i></span></div>
-        <div class="faq-a"><div class="faq-a-inner">Your funds are held in escrow by North Capital Trust Company, an independent qualified escrow agent. Funds are only released to the SPV upon a successful close on June 9, 2026. If the offering does not close for any reason, your funds will be returned to you in full. No fees charged.</div></div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What is North Capital Trust Company?</span><span class="faq-toggle"><i data-lucide="plus" class="icon-sm"></i></span></div>
-        <div class="faq-a"><div class="faq-a-inner">North Capital Trust Company is a registered transfer agent and escrow provider specializing in private securities offerings. They provide independent custody of investor funds, ensuring your money is protected and segregated throughout the subscription process until the SPV closing date of June 9, 2026.</div></div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What happens if the $1,000,000 target raise is not met?</span><span class="faq-toggle"><i data-lucide="plus" class="icon-sm"></i></span></div>
-        <div class="faq-a"><div class="faq-a-inner">If the minimum raise threshold is not met by the close date of June 9, 2026, all funds held in escrow by North Capital Trust Company will be returned to investors in full. No fees will be charged and you will be notified promptly. Your funds will be released without deduction.</div></div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- RISK DISCLOSURE -->
 <section class="risk-section" id="disclosures">

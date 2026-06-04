@@ -263,6 +263,12 @@
     .countdown-block.light .countdown-sep { color: var(--ink-20); }
     .countdown-block.light .countdown-unit-label { color: var(--blue); }
 
+    .countdown-inline { display: flex; align-items: center; justify-content: center; gap: 12px; background: rgba(0, 200, 255, 0.08); border: 1px solid rgba(0, 200, 255, 0.2); padding: 16px 24px; border-radius: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+    .countdown-inline .cd-label { font-size: 0.9rem; font-weight: 700; color: var(--blue); text-transform: uppercase; letter-spacing: 0.1em; }
+    .countdown-inline .cd-time-wrap { display: flex; align-items: baseline; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--ink); font-weight: 800; font-size: 1.4rem; letter-spacing: 1px; }
+    .countdown-inline .cd-unit { font-size: 0.9rem; font-weight: 600; color: var(--ink-55); margin-left: 2px; text-transform: lowercase; }
+    .countdown-inline .cd-sep { color: var(--ink-20); margin: 0 6px; font-weight: 400; font-family: 'Cormorant Garamond', serif; }
+
     .hero-scroll-hint { position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%); z-index: 3; display: flex; flex-direction: column; align-items: center; gap: 6px; color: rgba(255,255,255,0.48); font-size: 0.70rem; letter-spacing: 0.14em; text-transform: uppercase; animation: fadeIn 2s 1.5s both; }
     .scroll-arrow { width: 18px; height: 18px; border-right: 2px solid rgba(255,255,255,0.48); border-bottom: 2px solid rgba(255,255,255,0.48); transform: rotate(45deg); animation: bounce 2s infinite; }
 
@@ -1029,28 +1035,16 @@
       <p class="section-desc" style="margin:0 auto;">Only <span style="color:var(--gold); font-weight:600;">22.2%</span> of the offering remains. Submit your interest today.</p>
     </div>
     <div class="form-wrap reveal">
-      <div class="countdown-block light">
-        <div class="countdown-label">SPV Closes In</div>
-        <div class="countdown-digits">
-          <div class="countdown-unit">
-            <div class="countdown-num cd-val-days">00</div>
-            <div class="countdown-unit-label">Days</div>
-          </div>
-          <div class="countdown-sep">:</div>
-          <div class="countdown-unit">
-            <div class="countdown-num cd-val-hours">00</div>
-            <div class="countdown-unit-label">Hours</div>
-          </div>
-          <div class="countdown-sep">:</div>
-          <div class="countdown-unit">
-            <div class="countdown-num cd-val-mins">00</div>
-            <div class="countdown-unit-label">Minutes</div>
-          </div>
-          <div class="countdown-sep">:</div>
-          <div class="countdown-unit">
-            <div class="countdown-num cd-val-secs">00</div>
-            <div class="countdown-unit-label">Seconds</div>
-          </div>
+      <div class="countdown-inline">
+        <span class="cd-label">SPV Closes In:</span>
+        <div class="cd-time-wrap">
+          <span class="cd-val cd-val-days">00</span><span class="cd-unit">d</span>
+          <span class="cd-sep">:</span>
+          <span class="cd-val cd-val-hours">00</span><span class="cd-unit">h</span>
+          <span class="cd-sep">:</span>
+          <span class="cd-val cd-val-mins">00</span><span class="cd-unit">m</span>
+          <span class="cd-sep">:</span>
+          <span class="cd-val cd-val-secs">00</span><span class="cd-unit">s</span>
         </div>
       </div>
       <div class="open-badge"><i data-lucide="check-circle" class="icon-xs"></i> Open to All Investors · No Accreditation Required</div>

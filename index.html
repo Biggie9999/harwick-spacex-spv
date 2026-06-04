@@ -256,6 +256,12 @@
     .countdown-num::after { content: ''; position: absolute; top: 50%; left: 0; right: 0; height: 1px; background: rgba(255,255,255,0.10); }
     .countdown-sep { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 400; color: rgba(255,255,255,0.22); margin-bottom: 22px; }
     .countdown-unit-label { font-size: 0.58rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #00c8ff; }
+    .countdown-block.light { margin-top: 0; margin-bottom: 40px; }
+    .countdown-block.light .countdown-label { color: var(--ink-55); }
+    .countdown-block.light .countdown-num { background: #ffffff; border: 1px solid var(--border); color: var(--ink); box-shadow: var(--shadow-sm); }
+    .countdown-block.light .countdown-num::after { background: var(--border-light); }
+    .countdown-block.light .countdown-sep { color: var(--ink-20); }
+    .countdown-block.light .countdown-unit-label { color: var(--blue); }
 
     .hero-scroll-hint { position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%); z-index: 3; display: flex; flex-direction: column; align-items: center; gap: 6px; color: rgba(255,255,255,0.48); font-size: 0.70rem; letter-spacing: 0.14em; text-transform: uppercase; animation: fadeIn 2s 1.5s both; }
     .scroll-arrow { width: 18px; height: 18px; border-right: 2px solid rgba(255,255,255,0.48); border-bottom: 2px solid rgba(255,255,255,0.48); transform: rotate(45deg); animation: bounce 2s infinite; }
@@ -616,22 +622,22 @@
       <div class="countdown-label">Offering Closes In</div>
       <div class="countdown-digits">
         <div class="countdown-unit">
-          <div class="countdown-num" id="cd-days">00</div>
+          <div class="countdown-num cd-val-days">00</div>
           <div class="countdown-unit-label">Days</div>
         </div>
         <div class="countdown-sep">:</div>
         <div class="countdown-unit">
-          <div class="countdown-num" id="cd-hours">00</div>
+          <div class="countdown-num cd-val-hours">00</div>
           <div class="countdown-unit-label">Hours</div>
         </div>
         <div class="countdown-sep">:</div>
         <div class="countdown-unit">
-          <div class="countdown-num" id="cd-mins">00</div>
+          <div class="countdown-num cd-val-mins">00</div>
           <div class="countdown-unit-label">Minutes</div>
         </div>
         <div class="countdown-sep">:</div>
         <div class="countdown-unit">
-          <div class="countdown-num" id="cd-secs">00</div>
+          <div class="countdown-num cd-val-secs">00</div>
           <div class="countdown-unit-label">Seconds</div>
         </div>
       </div>
@@ -733,47 +739,53 @@
   </div>
 </section>
 
-<!-- TESLA HISTORY -->
-<section class="tesla-section" id="history">
+<!-- URGENCY SECTION -->
+<section class="tesla-section" id="urgency">
   <div class="section-inner">
     <div class="reveal">
-      <div class="section-tag">Historical Context</div>
-      <h2 class="section-title">The Last Time Elon Musk Took a Company Public,<br />Early Investors Made 21,000%</h2>
+      <div class="section-tag">The Window Is Closing</div>
+      <h2 class="section-title">SpaceX Goes Public June 12th.<br />Our SPV Closes June 9th.</h2>
       
       <div style="font-size: 1.05rem; color: var(--ink-80); line-height: 1.7; max-width: 800px; margin-top: 30px;">
-        <p style="margin-bottom: 20px;">In June 2010, Tesla went public at <strong>$17 per share</strong>. Most people ignored it. A few believed in Elon Musk's vision early.</p>
-        <p style="margin-bottom: 20px;">Here's what happened to those who got in:</p>
-        <ul style="margin-bottom: 24px; padding-left: 20px; list-style-type: disc;">
-          <li style="margin-bottom: 10px;">A <strong>$10,000</strong> investment at Tesla's IPO grew to approximately <strong>$2.1 million</strong> — a return exceeding <strong>21,000%</strong></li>
-          <li style="margin-bottom: 10px;">A <strong>$1,000</strong> investment grew to over <strong>$138,000</strong> — compared to just $5,118 in the S&P 500 over the same period</li>
-          <li style="margin-bottom: 10px;">Tesla's stock <strong>closed up 40.5%</strong> on its very first day of trading</li>
-        </ul>
-        <p style="margin-bottom: 20px;">That was Tesla. Now SpaceX — a company operating in space, satellite internet, AND artificial intelligence — is heading to market.</p>
-        <p style="margin-bottom: 20px;">SpaceX reported <strong>$18.67 billion</strong> in revenue for 2025, a 33% increase, with Starlink, space, and AI segments all growing. The IPO is projected to raise <strong>$30 billion</strong> — which would make it the <strong>largest IPO in history</strong>, surpassing Saudi Aramco's $29 billion listing in 2019.</p>
-        <p style="margin-bottom: 30px;">Through <strong>Liftoff Partners Fund I</strong>, you can get positioned <em>before</em> public trading starts. As SpaceX has officially filed its IPO today, <strong>this window is closing fast</strong>.</p>
-        <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; color: var(--blue); font-style: italic;">History doesn't repeat itself. But it rhymes.</p>
+        <p style="margin-bottom: 20px;">This isn't a "someday" opportunity anymore.</p>
+        <p style="margin-bottom: 20px;">SpaceX has accelerated its IPO timeline, targeting <strong>June 12, 2026</strong> for its public debut on Nasdaq under the ticker <strong>SPCX</strong>. Pricing was confirmed at <strong>$135/share</strong> on June 3rd, targeting a raise of <strong>$75 billion</strong> — the largest IPO in history.</p>
+        <p style="margin-bottom: 20px;">Once SpaceX trades publicly, the pre-IPO window closes forever. The chance to get in before the crowd — before the institutions, before the headlines, before the retail rush — ends <strong>June 9th</strong> when Liftoff Partners Fund I closes.</p>
+        <p style="margin-bottom: 20px;">When Tesla went public in 2010, a $10,000 investment grew to approximately $2.1 million — a return exceeding <strong>21,000%</strong> for those who got in early.</p>
+        <p style="margin-bottom: 20px;">SpaceX is bigger. Faster. And the IPO is in <strong>8 days</strong>.</p>
+        <p style="margin-bottom: 30px; font-weight: 600;">Minimum investment: $1,500. Close date: June 9, 2026.</p>
+        <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; color: var(--blue); font-style: italic;">Don't watch this one from the sidelines.</p>
       </div>
 
-      <div class="steps-grid" style="margin-top: 60px;">
+      <div class="steps-grid" style="grid-template-columns: repeat(3, 1fr); margin-top: 60px;">
         <div class="step" style="text-align: center; align-items: center; justify-content: center;">
-          <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--gold); margin-bottom: 8px; letter-spacing: -0.02em;">21,000%</div>
-          <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink);">Tesla IPO Return</div>
-          <p style="font-size: 0.75rem; color: var(--ink-55); margin-top: 6px;">for early investors</p>
+          <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--ink); margin-bottom: 8px; letter-spacing: -0.02em;">June 12</div>
+          <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink);">SpaceX IPO Date</div>
+          <p style="font-size: 0.75rem; color: var(--ink-55); margin-top: 6px;">public debut (Nasdaq)</p>
         </div>
         <div class="step" style="text-align: center; align-items: center; justify-content: center;">
-          <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--ink); margin-bottom: 8px; letter-spacing: -0.02em;">$18.67B</div>
-          <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink);">2025 Revenue</div>
-          <p style="font-size: 0.75rem; color: var(--ink-55); margin-top: 6px;">+33% YoY</p>
+          <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--ink); margin-bottom: 8px; letter-spacing: -0.02em;">$135</div>
+          <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink);">IPO Price (SPCX)</div>
+          <p style="font-size: 0.75rem; color: var(--ink-55); margin-top: 6px;">confirmed target</p>
         </div>
         <div class="step" style="text-align: center; align-items: center; justify-content: center;">
-          <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--ink); margin-bottom: 8px; letter-spacing: -0.02em;">$30B</div>
-          <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink);">Projected IPO Size</div>
-          <p style="font-size: 0.75rem; color: var(--ink-55); margin-top: 6px;">largest in history</p>
+          <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--ink); margin-bottom: 8px; letter-spacing: -0.02em;">$75B</div>
+          <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink);">IPO Size</div>
+          <p style="font-size: 0.75rem; color: var(--ink-55); margin-top: 6px;">largest ever</p>
+        </div>
+        <div class="step" style="text-align: center; align-items: center; justify-content: center;">
+          <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--gold); margin-bottom: 8px; letter-spacing: -0.02em;">June 9</div>
+          <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink);">SPV Closes</div>
+          <p style="font-size: 0.75rem; color: var(--ink-55); margin-top: 6px;">deadline to invest</p>
         </div>
         <div class="step" style="text-align: center; align-items: center; justify-content: center;">
           <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--blue); margin-bottom: 8px; letter-spacing: -0.02em;">$1,500</div>
           <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink);">Your Entry Point</div>
           <p style="font-size: 0.75rem; color: var(--ink-55); margin-top: 6px;">minimum investment</p>
+        </div>
+        <div class="step" style="text-align: center; align-items: center; justify-content: center;">
+          <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--ink); margin-bottom: 8px; letter-spacing: -0.02em;">21,000%</div>
+          <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink);">Tesla Early Return</div>
+          <p style="font-size: 0.75rem; color: var(--ink-55); margin-top: 6px;">for illustrative purposes</p>
         </div>
       </div>
 
@@ -1017,6 +1029,30 @@
       <p class="section-desc" style="margin:0 auto;">Only <span style="color:var(--gold); font-weight:600;">22.2%</span> of the offering remains. Submit your interest today.</p>
     </div>
     <div class="form-wrap reveal">
+      <div class="countdown-block light">
+        <div class="countdown-label">SPV Closes In</div>
+        <div class="countdown-digits">
+          <div class="countdown-unit">
+            <div class="countdown-num cd-val-days">00</div>
+            <div class="countdown-unit-label">Days</div>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-unit">
+            <div class="countdown-num cd-val-hours">00</div>
+            <div class="countdown-unit-label">Hours</div>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-unit">
+            <div class="countdown-num cd-val-mins">00</div>
+            <div class="countdown-unit-label">Minutes</div>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-unit">
+            <div class="countdown-num cd-val-secs">00</div>
+            <div class="countdown-unit-label">Seconds</div>
+          </div>
+        </div>
+      </div>
       <div class="open-badge"><i data-lucide="check-circle" class="icon-xs"></i> Open to All Investors · No Accreditation Required</div>
       <div class="inv-limits-note">
         <i data-lucide="info" class="icon-sm"></i>
@@ -1229,11 +1265,16 @@
   function pad(n) { return String(n).padStart(2,'0'); }
   function tick() {
     const diff = CLOSE_DATE - new Date();
-    if (diff <= 0) { ['cd-days','cd-hours','cd-mins','cd-secs'].forEach(id => document.getElementById(id).textContent = '00'); return; }
-    document.getElementById('cd-days').textContent  = pad(Math.floor(diff / 86400000));
-    document.getElementById('cd-hours').textContent = pad(Math.floor((diff % 86400000) / 3600000));
-    document.getElementById('cd-mins').textContent  = pad(Math.floor((diff % 3600000) / 60000));
-    document.getElementById('cd-secs').textContent  = pad(Math.floor((diff % 60000) / 1000));
+    if (diff <= 0) { 
+      ['cd-val-days','cd-val-hours','cd-val-mins','cd-val-secs'].forEach(cls => {
+        document.querySelectorAll('.'+cls).forEach(el => el.textContent = '00');
+      });
+      return; 
+    }
+    document.querySelectorAll('.cd-val-days').forEach(el => el.textContent = pad(Math.floor(diff / 86400000)));
+    document.querySelectorAll('.cd-val-hours').forEach(el => el.textContent = pad(Math.floor((diff % 86400000) / 3600000)));
+    document.querySelectorAll('.cd-val-mins').forEach(el => el.textContent = pad(Math.floor((diff % 3600000) / 60000)));
+    document.querySelectorAll('.cd-val-secs').forEach(el => el.textContent = pad(Math.floor((diff % 60000) / 1000)));
   }
   tick(); setInterval(tick, 1000);
 

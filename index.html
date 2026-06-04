@@ -264,17 +264,17 @@
        PROGRESS STRIP (light)
     ═══════════════════════════════════════════ */
     .progress-strip { position: relative; z-index: 4; background: #ffffff; border-bottom: 1px solid var(--border-ink); padding: 22px 5%; }
-    .progress-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
-    .progress-meta { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
-    .progress-left { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
-    .progress-amount { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.55rem; font-weight: 700; color: var(--ink); }
-    .progress-of { font-size: 0.80rem; color: var(--ink-55); }
-    .progress-target { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; font-weight: 600; color: var(--ink-80); }
-    .progress-right { display: flex; gap: 40px; align-items: center; flex-wrap: wrap; }
-    .progress-stat { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
-    .progress-stat-val { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--blue); }
+    .progress-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+    .progress-meta { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
+    .progress-left { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+    .progress-amount { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--ink); letter-spacing: -0.02em; }
+    .progress-of { font-size: 1rem; color: var(--ink-55); }
+    .progress-target { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--ink-80); }
+    .progress-right { display: flex; gap: 32px; align-items: center; flex-wrap: wrap; }
+    .progress-stat { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+    .progress-stat-val { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.3rem; font-weight: 800; color: var(--blue); }
     .progress-stat-val.gold { color: var(--gold); }
-    .progress-stat-label { font-size: 0.60rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-55); }
+    .progress-stat-label { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-55); }
     .progress-bar-wrap { width: 100%; height: 4px; background: var(--blue-light); overflow: hidden; }
     .progress-bar-fill { height: 100%; background: linear-gradient(90deg, var(--blue), #6366f1); transition: width 1.8s cubic-bezier(0.4,0,0.2,1); width: 0%; }
 
@@ -300,8 +300,7 @@
     ═══════════════════════════════════════════ */
     section { position: relative; z-index: 4; }
     .section-inner { max-width: 1100px; margin: 0 auto; padding: 0 5%; }
-    .section-tag { display: inline-flex; align-items: center; gap: 8px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--blue); margin-bottom: 14px; }
-    .section-tag-line { display: block; width: 20px; height: 2px; background: var(--blue); flex-shrink: 0; }
+    .section-tag { display: inline-flex; align-items: center; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--blue); margin-bottom: 14px; }
     .section-title { font-size: clamp(1.75rem, 4vw, 2.4rem); font-weight: 700; letter-spacing: -0.03em; margin-bottom: 16px; line-height: 1.15; color: var(--ink); }
     .section-desc { font-size: 1rem; color: var(--ink-80); max-width: 580px; line-height: 1.78; font-weight: 300; }
 
@@ -698,7 +697,7 @@
 <section class="opportunity" id="opportunity">
   <div class="section-inner">
     <div class="reveal">
-      <div class="section-tag"><span class="section-tag-line"></span>The Opportunity</div>
+      <div class="section-tag">The Opportunity</div>
       <h2 class="section-title">The Most Anticipated<br />IPO of the Decade</h2>
       <p class="section-desc">SpaceX is reshaping humanity's future. Until now, only institutions and ultra-high-net-worth individuals could access pre-IPO shares. We are changing that.</p>
     </div>
@@ -733,7 +732,7 @@
 <section class="how-it-works" id="how-it-works">
   <div class="section-inner">
     <div class="reveal" style="text-align:center;">
-      <div class="section-tag" style="justify-content:center;"><span class="section-tag-line"></span>How It Works</div>
+      <div class="section-tag" style="justify-content:center;">How It Works</div>
       <h2 class="section-title">Four Steps to Ownership</h2>
       <p class="section-desc" style="margin:0 auto;">A clear, straightforward path to pre-IPO ownership with no wealth manager required.</p>
     </div>
@@ -770,7 +769,7 @@
 <section class="about-spv" id="about-spv">
   <div class="section-inner">
     <div class="reveal">
-      <div class="section-tag"><span class="section-tag-line"></span>About the Fund</div>
+      <div class="section-tag">About the Fund</div>
       <h2 class="section-title">Liftoff Partners Fund I</h2>
       <p class="section-desc">A purpose-built investment vehicle designed to give all investors institutional-grade access to SpaceX.</p>
     </div>
@@ -802,7 +801,7 @@
 <section class="why-invest" id="why-invest">
   <div class="section-inner">
     <div class="reveal">
-      <div class="section-tag"><span class="section-tag-line"></span>Why Invest With Us</div>
+      <div class="section-tag">Why Invest With Us</div>
       <h2 class="section-title">Built on Regulation,<br />Backed by Transparency</h2>
       <p class="section-desc">Harwick Securities exists to break down the barriers between everyday investors and world-changing opportunities.</p>
     </div>
@@ -837,7 +836,7 @@
 <section class="team-section" id="team">
   <div class="section-inner">
     <div class="reveal">
-      <div class="section-tag"><span class="section-tag-line"></span>Leadership</div>
+      <div class="section-tag">Leadership</div>
       <h2 class="section-title">The Team<br />Behind the Fund</h2>
       <p class="section-desc">Led by capital markets professionals with decades of combined experience in securities regulation, private placements, and investment banking.</p>
     </div>
@@ -889,7 +888,7 @@
 <section class="contact-section" id="contact">
   <div class="section-inner">
     <div class="reveal">
-      <div class="section-tag"><span class="section-tag-line"></span>Contact</div>
+      <div class="section-tag">Contact</div>
       <h2 class="section-title">Speak With Our<br />Investor Relations Team</h2>
       <p class="section-desc">Questions before you invest? Our team is available during business hours to walk you through the offering.</p>
     </div>
@@ -956,7 +955,7 @@
 <section class="form-section" id="get-started">
   <div class="section-inner">
     <div class="reveal" style="text-align:center;">
-      <div class="section-tag" style="justify-content:center;"><span class="section-tag-line"></span>Reserve Your Spot</div>
+      <div class="section-tag" style="justify-content:center;">Reserve Your Spot</div>
       <h2 class="section-title">Secure Your Position<br />Before the Offering Closes</h2>
       <p class="section-desc" style="margin:0 auto;">Only <span style="color:var(--gold); font-weight:600;">22.2%</span> of the offering remains. Submit your interest today.</p>
     </div>
@@ -1013,7 +1012,7 @@
 <section class="faq-section" id="faq">
   <div class="section-inner">
     <div class="reveal">
-      <div class="section-tag"><span class="section-tag-line"></span>FAQ</div>
+      <div class="section-tag">FAQ</div>
       <h2 class="section-title">Common Questions,<br />Straight Answers</h2>
     </div>
     <div class="faq-list reveal">
@@ -1064,7 +1063,7 @@
 <!-- RISK DISCLOSURE -->
 <section class="risk-section" id="disclosures">
   <div class="section-inner">
-    <div class="section-tag" style="color:var(--gold);"><span class="section-tag-line" style="background:var(--gold);"></span>Important Disclosures</div>
+    <div class="section-tag" style="color:var(--gold);">Important Disclosures</div>
     <h2 class="section-title" style="font-size:1.5rem;">Risk Disclosure</h2>
     <div class="risk-box">
       <div class="risk-box-header">

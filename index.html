@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liftoff Partners Fund I — SpaceX Pre-IPO Offering | Harwick Securities</title>
+  <meta name="description" content="Invest in SpaceX before the IPO through Liftoff Partners Fund I, a Reg A+ SPV offered by Harwick Securities (FINRA CRD# 083738). Minimum $1,500. Open to all investors. Closes June 9, 2026." />
+  <link rel="canonical" href="https://[INSERT-DOMAIN].com/" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23ffffff' stroke='%230061c2' stroke-width='2'/><text x='16' y='22' font-family='Georgia,serif' font-style='italic' font-weight='bold' font-size='14' fill='%230061c2' text-anchor='middle'>HS</text></svg>" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Liftoff Partners Fund I — SpaceX Pre-IPO | Harwick Securities" />
+  <meta property="og:description" content="Invest in SpaceX before the IPO. Reg A+ offering. Minimum $1,500. Closes June 9, 2026." />
+  <meta property="og:image" content="hero_bg.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Liftoff Partners Fund I — SpaceX Pre-IPO | Harwick Securities" />
+  <meta name="twitter:description" content="Invest in SpaceX before the IPO. Reg A+. Min $1,500. Closes June 9, 2026." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <style>
+    /* ═══════════════════════════════════════════
+       DESIGN TOKENS — LIGHT THEME
+    ═══════════════════════════════════════════ */
+    :root {
+      /* Surfaces */
+      --bg:           #f1f4fa;
+      --bg-alt:       #ffffff;
+      --card:         #ffffff;
+
+      /* Dark surfaces (hero, footer) */
+      --dark:         #050c1a;
+      --dark-mid:     #0a1628;
+
+      /* Ink (text on light backgrounds) */
+      --ink:          #0b1929;
+      --ink-80:       rgba(11,25,41,0.78);
+      --ink-55:       rgba(11,25,41,0.55);
+      --ink-25:       rgba(11,25,41,0.20);
+      --ink-10:       rgba(11,25,41,0.08);
+      --ink-04:       rgba(11,25,41,0.03);
+
+      /* On-dark text */
+      --light:        #ffffff;
+      --light-80:     rgba(255,255,255,0.80);
+      --light-50:     rgba(255,255,255,0.50);
+      --light-20:     rgba(255,255,255,0.20);
+
+      /* Accents */
+      --blue:         #0061c2;
+      --blue-dim:     #004fa0;
+      --blue-light:   rgba(0,97,194,0.08);
+      --gold:         #9a6800;
+      --gold-dim:     #7a5200;
+      --gold-light:   rgba(154,104,0,0.09);
+      --green:        #1a7a4a;
+
+      /* Borders */
+      --border:       rgba(0,97,194,0.12);
+      --border-ink:   rgba(11,25,41,0.10);
+      --border-gold:  rgba(154,104,0,0.20);
+
+      /* Shadows */
+      --shadow:       0 1px 4px rgba(11,25,41,0.06), 0 4px 20px rgba(11,25,41,0.05);
+      --shadow-sm:    0 1px 3px rgba(11,25,41,0.07);
+
+      --transition:   0.28s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    /* ═══════════════════════════════════════════
+       RESET & BASE
+    ═══════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--ink); line-height: 1.65; overflow-x: hidden; }
+    h1, h2, h3, h4 { font-family: 'Plus Jakarta Sans', sans-serif; }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { opacity: 0.78; }
+    ul { list-style: none; }
+
+    [data-lucide] { display: inline-block; vertical-align: middle; stroke-width: 1.5; flex-shrink: 0; }
+    .icon-xs  { width: 14px; height: 14px; }
+    .icon-sm  { width: 18px; height: 18px; }
+    .icon-md  { width: 22px; height: 22px; }
+    .icon-lg  { width: 28px; height: 28px; }
+    .icon-xl  { width: 40px; height: 40px; }
+
+    /* ═══════════════════════════════════════════
+       STARS CANVAS (visible only on dark hero)
+    ═══════════════════════════════════════════ */
+    #stars-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; }
+
+    /* ═══════════════════════════════════════════
+       COOKIE BANNER
+    ═══════════════════════════════════════════ */
+    .cookie-banner {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 999;
+      background: #ffffff;
+      border-top: 1px solid var(--border-ink);
+      padding: 18px 5%;
+      display: flex; align-items: center; justify-content: space-between; gap: 24px;
+      box-shadow: 0 -4px 24px rgba(11,25,41,0.08);
+      transform: translateY(0); transition: transform 0.4s ease;
+    }
+    .cookie-banner.hidden { transform: translateY(110%); }
+    .cookie-banner p { font-size: 0.78rem; color: var(--ink-80); line-height: 1.6; max-width: 640px; }
+    .cookie-banner p a { color: var(--blue); }
+    .cookie-btns { display: flex; gap: 10px; flex-shrink: 0; }
+    .btn-cookie-accept { padding: 9px 22px; background: var(--blue); color: #fff; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 0.8rem; border: none; cursor: pointer; }
+    .btn-cookie-reject { padding: 9px 18px; background: transparent; color: var(--ink-55); font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 500; font-size: 0.8rem; border: 1px solid var(--border-ink); cursor: pointer; }
+
+    /* ═══════════════════════════════════════════
+       ATTORNEY BANNER
+    ═══════════════════════════════════════════ */
+    .attorney-banner {
+      position: relative; z-index: 200;
+      background: #fef8e8;
+      border-bottom: 1px solid rgba(154,104,0,0.28);
+      padding: 10px 5%;
+      display: flex; align-items: center; justify-content: center; gap: 10px; text-align: center;
+    }
+    .attorney-banner p { font-size: 0.72rem; color: var(--gold); font-weight: 500; letter-spacing: 0.02em; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: center; }
+    .attorney-banner strong { font-weight: 700; }
+
+    /* ═══════════════════════════════════════════
+       NAVBAR
+    ═══════════════════════════════════════════ */
+    .navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5%; height: 72px;
+      background: rgba(5,12,26,0.75); /* dark: over dark hero */
+      backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(255,255,255,0.10);
+      transition: background var(--transition), border-color var(--transition), box-shadow var(--transition);
+    }
+    .navbar.scrolled {
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid var(--border-ink);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Logo mark */
+    .nav-logo { display: flex; align-items: center; gap: 13px; cursor: default; }
+    .nav-logo-mark {
+      width: 42px; height: 42px;
+      border: 1.5px solid rgba(255,255,255,0.70);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      transition: border-color var(--transition);
+    }
+    .navbar.scrolled .nav-logo-mark { border-color: var(--blue); }
+    .nav-logo-mark-inner {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: rgba(255,255,255,0.90);
+      letter-spacing: -0.01em;
+      line-height: 1;
+      transition: color var(--transition);
+    }
+    .navbar.scrolled .nav-logo-mark-inner { color: var(--blue); }
+
+    /* Logo wordmark */
+    .nav-logo-wordmark { display: flex; flex-direction: column; gap: 0px; }
+    .logo-name-serif {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: 1.12rem;
+      letter-spacing: 0.01em;
+      color: rgba(255,255,255,0.95);
+      line-height: 1.15;
+      transition: color var(--transition);
+    }
+    .navbar.scrolled .logo-name-serif { color: var(--ink); }
+    .logo-name-sans {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 400;
+      font-size: 0.60rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      transition: color var(--transition);
+    }
+    .navbar.scrolled .logo-name-sans { color: var(--ink-55); }
+    .nav-logo-sub {
+      font-size: 0.58rem;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      color: rgba(255,255,255,0.40);
+      transition: color var(--transition);
+    }
+    .navbar.scrolled .nav-logo-sub { color: var(--blue); }
+
+    /* Nav links */
+    .nav-links { display: flex; gap: 28px; align-items: center; }
+    .nav-links a { color: rgba(255,255,255,0.78); font-size: 0.87rem; font-weight: 500; transition: color var(--transition); }
+    .nav-links a:hover { color: rgba(255,255,255,1); opacity: 1; }
+    .navbar.scrolled .nav-links a { color: var(--ink-80); }
+    .navbar.scrolled .nav-links a:hover { color: var(--blue); }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--blue), var(--blue-dim));
+      color: #ffffff !important;
+      padding: 9px 20px;
+      font-weight: 700 !important; font-size: 0.83rem !important;
+      display: inline-flex !important; align-items: center !important; gap: 6px !important;
+      transition: transform var(--transition), box-shadow var(--transition) !important;
+      box-shadow: 0 0 18px rgba(0,97,194,0.28);
+    }
+    .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 4px 22px rgba(0,97,194,0.40) !important; opacity: 1 !important; }
+
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .nav-hamburger span { display: block; width: 24px; height: 2px; background: #ffffff; transition: var(--transition); }
+    .navbar.scrolled .nav-hamburger span { background: var(--ink); }
+    .nav-hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .nav-hamburger.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .nav-hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    /* ═══════════════════════════════════════════
+       HERO (stays dark)
+    ═══════════════════════════════════════════ */
+    .hero {
+      position: relative; min-height: 100vh;
+      display: flex; align-items: center; justify-content: center; text-align: center;
+      padding: 120px 5% 80px; overflow: hidden;
+    }
+    .hero-bg { position: absolute; inset: 0; background-image: url('hero_bg.png'); background-size: cover; background-position: center 30%; z-index: 1; }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(5,12,26,0.40) 0%, rgba(5,12,26,0.58) 48%, rgba(5,12,26,0.97) 100%); z-index: 2; }
+    .hero-content { position: relative; z-index: 3; max-width: 900px; animation: fadeUp 0.9s ease both; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: rgba(0,200,255,0.10); border: 1px solid rgba(0,200,255,0.28);
+      padding: 7px 18px; font-size: 0.74rem; font-weight: 600;
+      letter-spacing: 0.09em; text-transform: uppercase; color: #00c8ff;
+      margin-bottom: 28px; backdrop-filter: blur(8px);
+    }
+    .hero-badge-dot { width: 6px; height: 6px; background: #00c8ff; animation: pulse-dot 2s infinite; flex-shrink: 0; }
+    .hero h1 { font-size: clamp(2.2rem, 6vw, 3.9rem); font-weight: 700; line-height: 1.08; letter-spacing: -0.03em; margin-bottom: 24px; color: #ffffff; text-shadow: 0 2px 40px rgba(0,0,0,0.55); }
+    .hero h1 .highlight { background: linear-gradient(135deg, #00c8ff 0%, #a78bfa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero-sub { font-size: clamp(1rem, 2.5vw, 1.18rem); color: rgba(255,255,255,0.80); max-width: 540px; margin: 0 auto 40px; font-weight: 300; line-height: 1.78; }
+    .hero-sub strong { color: #f0b429; font-weight: 600; }
+    .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 15px 34px; background: linear-gradient(135deg, var(--blue), var(--blue-dim)); color: #ffffff; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 0.95rem; border: none; cursor: pointer; transition: transform var(--transition), box-shadow var(--transition); box-shadow: 0 0 24px rgba(0,97,194,0.32); text-decoration: none; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,97,194,0.50); opacity: 1; }
+    .btn-secondary { display: inline-flex; align-items: center; gap: 8px; padding: 15px 34px; background: rgba(255,255,255,0.08); color: #ffffff; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; font-size: 0.95rem; border: 1px solid rgba(255,255,255,0.22); cursor: pointer; transition: transform var(--transition), background var(--transition); backdrop-filter: blur(8px); text-decoration: none; }
+    .btn-secondary:hover { transform: translateY(-2px); background: rgba(255,255,255,0.18); opacity: 1; }
+
+    /* Countdown */
+    .countdown-block { margin-top: 48px; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+    .countdown-label { font-size: 0.60rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(255,255,255,0.48); }
+    .countdown-digits { display: flex; gap: 12px; align-items: center; }
+    .countdown-unit { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+    .countdown-num { width: 76px; height: 76px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.18); display: flex; align-items: center; justify-content: center; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.9rem; font-weight: 700; color: #ffffff; letter-spacing: -0.02em; position: relative; }
+    .countdown-num::after { content: ''; position: absolute; top: 50%; left: 0; right: 0; height: 1px; background: rgba(255,255,255,0.10); }
+    .countdown-sep { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 400; color: rgba(255,255,255,0.22); margin-bottom: 22px; }
+    .countdown-unit-label { font-size: 0.58rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #00c8ff; }
+
+    .hero-scroll-hint { position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%); z-index: 3; display: flex; flex-direction: column; align-items: center; gap: 6px; color: rgba(255,255,255,0.48); font-size: 0.70rem; letter-spacing: 0.14em; text-transform: uppercase; animation: fadeIn 2s 1.5s both; }
+    .scroll-arrow { width: 18px; height: 18px; border-right: 2px solid rgba(255,255,255,0.48); border-bottom: 2px solid rgba(255,255,255,0.48); transform: rotate(45deg); animation: bounce 2s infinite; }
+
+    /* ═══════════════════════════════════════════
+       PROGRESS STRIP (light)
+    ═══════════════════════════════════════════ */
+    .progress-strip { position: relative; z-index: 4; background: #ffffff; border-bottom: 1px solid var(--border-ink); padding: 22px 5%; }
+    .progress-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+    .progress-meta { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+    .progress-left { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+    .progress-amount { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.55rem; font-weight: 700; color: var(--ink); }
+    .progress-of { font-size: 0.80rem; color: var(--ink-55); }
+    .progress-target { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; font-weight: 600; color: var(--ink-80); }
+    .progress-right { display: flex; gap: 40px; align-items: center; flex-wrap: wrap; }
+    .progress-stat { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
+    .progress-stat-val { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--blue); }
+    .progress-stat-val.gold { color: var(--gold); }
+    .progress-stat-label { font-size: 0.60rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-55); }
+    .progress-bar-wrap { width: 100%; height: 4px; background: var(--blue-light); overflow: hidden; }
+    .progress-bar-fill { height: 100%; background: linear-gradient(90deg, var(--blue), #6366f1); transition: width 1.8s cubic-bezier(0.4,0,0.2,1); width: 0%; }
+
+    /* ═══════════════════════════════════════════
+       TRUST BAR (light)
+    ═══════════════════════════════════════════ */
+    .trust-bar { position: relative; z-index: 4; background: var(--bg); border-bottom: 1px solid var(--border-ink); padding: 16px 5%; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 28px; }
+    .trust-item { display: flex; align-items: center; gap: 8px; color: var(--ink-80); font-size: 0.79rem; font-weight: 500; }
+    .trust-item [data-lucide] { color: var(--blue); }
+    .trust-divider { width: 1px; height: 20px; background: var(--ink-25); }
+
+    /* ═══════════════════════════════════════════
+       PRESS BAR (light)
+    ═══════════════════════════════════════════ */
+    .press-bar { position: relative; z-index: 4; background: #ffffff; border-bottom: 1px solid var(--border-ink); padding: 22px 5%; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+    .press-label { font-size: 0.60rem; font-weight: 700; letter-spacing: 0.20em; text-transform: uppercase; color: var(--ink-55); }
+    .press-logos { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; justify-content: center; }
+    .press-item { height: 22px; background: var(--ink-10); padding: 0 20px; display: flex; align-items: center; justify-content: center; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; color: var(--ink-55); text-transform: uppercase; white-space: nowrap; min-width: 90px; font-family: 'Plus Jakarta Sans', sans-serif; transition: background var(--transition), color var(--transition), transform var(--transition); text-decoration: none; }
+    .press-item:hover { background: var(--ink-25); color: #ffffff; transform: translateY(-2px); }
+
+    /* ═══════════════════════════════════════════
+       SECTION COMMON
+    ═══════════════════════════════════════════ */
+    section { position: relative; z-index: 4; }
+    .section-inner { max-width: 1100px; margin: 0 auto; padding: 0 5%; }
+    .section-tag { display: inline-flex; align-items: center; gap: 8px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--blue); margin-bottom: 14px; }
+    .section-tag-line { display: block; width: 20px; height: 2px; background: var(--blue); flex-shrink: 0; }
+    .section-title { font-size: clamp(1.75rem, 4vw, 2.4rem); font-weight: 700; letter-spacing: -0.03em; margin-bottom: 16px; line-height: 1.15; color: var(--ink); }
+    .section-desc { font-size: 1rem; color: var(--ink-80); max-width: 580px; line-height: 1.78; font-weight: 300; }
+
+    /* ═══════════════════════════════════════════
+       OPPORTUNITY (light)
+    ═══════════════════════════════════════════ */
+    .opportunity { padding: 100px 0; background: #ffffff; }
+    .opportunity-grid { display: grid; grid-template-columns: repeat(3, 1fr); margin: 60px 0 0; gap: 24px; }
+    .opp-card { background: #ffffff; padding: 36px 28px; position: relative; overflow: hidden; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), background var(--transition); border: 1px solid rgba(11,25,41,0.04); box-shadow: var(--shadow-sm); }
+    .opp-card::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: var(--blue); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease; }
+    .opp-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(11,25,41,0.08); background: #ffffff; }
+    .opp-card:hover::after { transform: scaleX(1); }
+    .opp-card-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-55); margin-bottom: 14px; }
+    .opp-card-value { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.6rem; font-weight: 700; color: var(--ink); margin-bottom: 10px; letter-spacing: -0.04em; line-height: 1; }
+    .opp-card-value .accent { color: var(--gold); }
+    .opp-card-desc { font-size: 0.83rem; color: var(--ink-55); line-height: 1.65; }
+    .opp-text { background: #fffbf0; border: 1px solid var(--border-gold); border-top: 2px solid var(--gold); padding: 36px 40px; display: flex; gap: 24px; align-items: flex-start; margin-top: 24px; }
+    .opp-text-icon { flex-shrink: 0; color: var(--gold); margin-top: 2px; }
+    .opp-text-body h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 10px; color: var(--gold); }
+    .opp-text-body p { font-size: 0.92rem; color: var(--ink-80); line-height: 1.78; }
+
+    /* ═══════════════════════════════════════════
+       HOW IT WORKS (light)
+    ═══════════════════════════════════════════ */
+    .how-it-works { padding: 100px 0; background: var(--bg); }
+    .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 60px; gap: 24px; }
+    .step { display: flex; flex-direction: column; align-items: flex-start; text-align: left; padding: 36px 28px; background: #ffffff; position: relative; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1); border: 1px solid rgba(11,25,41,0.04); box-shadow: var(--shadow-sm); }
+    .step:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(11,25,41,0.08); }
+    .step-icon-box { width: 50px; height: 50px; background: var(--blue-light); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: var(--blue); }
+    .step-num-tag { font-size: 0.60rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue); margin-bottom: 8px; }
+    .step h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 10px; color: var(--ink); }
+    .step p { font-size: 0.82rem; color: var(--ink-55); line-height: 1.68; }
+
+    /* ═══════════════════════════════════════════
+       ABOUT SPV (light)
+    ═══════════════════════════════════════════ */
+    .about-spv { padding: 100px 0; background: #ffffff; }
+    .spv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 60px; align-items: start; }
+    .spv-explain { background: #ffffff; border: 1px solid var(--border-ink); border-top: 2px solid var(--blue); padding: 40px; box-shadow: var(--shadow); }
+    .spv-explain h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; color: var(--blue); }
+    .spv-explain p { font-size: 0.90rem; color: var(--ink-80); line-height: 1.82; margin-bottom: 14px; }
+    .spv-explain p:last-child { margin-bottom: 0; }
+    .spv-terms { display: flex; flex-direction: column; border: 1px solid var(--border-ink); box-shadow: var(--shadow); }
+    .term-row { background: #ffffff; padding: 16px 22px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-ink); transition: background var(--transition); }
+    .term-row:last-child { border-bottom: none; }
+    .term-row:hover { background: #f4f8ff; }
+    .term-label { font-size: 0.78rem; color: var(--ink-55); font-weight: 500; }
+    .term-value { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--ink); text-align: right; }
+    .term-value.gold { color: var(--gold); }
+    .term-value.blue { color: var(--blue); }
+
+    /* ═══════════════════════════════════════════
+       WHY INVEST (light)
+    ═══════════════════════════════════════════ */
+    .why-invest { padding: 100px 0; background: var(--bg); }
+    .trust-cards { display: grid; grid-template-columns: repeat(3, 1fr); margin: 60px 0 24px; gap: 24px; }
+    .trust-card { background: #ffffff; padding: 36px 32px; text-align: center; position: relative; overflow: hidden; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), background var(--transition); border: 1px solid rgba(11,25,41,0.04); box-shadow: var(--shadow-sm); }
+    .trust-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: var(--blue); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease; }
+    .trust-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(11,25,41,0.08); background: #ffffff; }
+    .trust-card:hover::before { transform: scaleX(1); }
+    .trust-card-icon { width: 50px; height: 50px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; background: var(--blue-light); }
+    .trust-card-icon [data-lucide] { color: var(--blue); }
+    .trust-card-icon.gold-icon { background: var(--gold-light); border-color: var(--border-gold); }
+    .trust-card-icon.gold-icon [data-lucide] { color: var(--gold); }
+    .trust-card-icon.purple-icon { background: rgba(99,102,241,0.07); border-color: rgba(99,102,241,0.18); }
+    .trust-card-icon.purple-icon [data-lucide] { color: #6366f1; }
+    .trust-card h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 10px; color: var(--ink); }
+    .trust-card p { font-size: 0.84rem; color: var(--ink-55); line-height: 1.68; }
+    .firm-bio { background: #fffbf0; border: 1px solid var(--border-gold); border-top: 2px solid var(--gold); padding: 36px 40px; display: flex; gap: 28px; align-items: flex-start; }
+    .firm-bio-mark { width: 68px; height: 68px; border: 1.5px solid var(--blue); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .firm-bio-mark-inner { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 600; font-size: 1.5rem; color: var(--blue); }
+    .firm-bio-text h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; color: var(--ink); }
+    .firm-bio-text p { font-size: 0.87rem; color: var(--ink-80); line-height: 1.80; }
+
+    /* ═══════════════════════════════════════════
+       TEAM (light)
+    ═══════════════════════════════════════════ */
+    .team-section { padding: 100px 0; background: #ffffff; }
+    .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 60px; gap: 24px; }
+    .team-card { background: #ffffff; padding: 0; display: flex; flex-direction: column; overflow: hidden; position: relative; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1); border: 1px solid rgba(11,25,41,0.04); box-shadow: var(--shadow-sm); }
+    .team-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: var(--blue); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease; z-index: 1; }
+    .team-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(11,25,41,0.08); }
+    .team-card:hover::before { transform: scaleX(1); }
+    .team-photo { width: 100%; height: 260px; overflow: hidden; background: var(--bg); }
+    .team-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; filter: grayscale(20%) contrast(1.02); transition: filter 0.4s ease; }
+    .team-card:hover .team-photo img { filter: grayscale(0%) contrast(1.05); }
+    .team-card-body { padding: 28px; }
+    .team-name { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 1.25rem; margin-bottom: 3px; color: var(--ink); letter-spacing: 0.01em; }
+    .team-title { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue); margin-bottom: 14px; }
+    .team-bio { font-size: 0.82rem; color: var(--ink-55); line-height: 1.72; }
+    .team-licenses { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 14px; }
+    .license-badge { padding: 3px 8px; background: var(--blue-light); border: 1px solid var(--border); font-size: 0.63rem; font-weight: 700; letter-spacing: 0.06em; color: var(--blue); }
+
+    /* ═══════════════════════════════════════════
+       CONTACT (light)
+    ═══════════════════════════════════════════ */
+    .contact-section { padding: 100px 0; background: var(--bg); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 60px; }
+    .contact-card { background: #ffffff; border: 1px solid var(--border-ink); border-top: 2px solid var(--blue); padding: 40px; box-shadow: var(--shadow); }
+    .contact-card.gold-top { border-top-color: var(--gold); }
+    .contact-row { display: flex; align-items: flex-start; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--border-ink); }
+    .contact-row:last-child { border-bottom: none; }
+    .contact-row [data-lucide] { color: var(--blue); flex-shrink: 0; margin-top: 2px; }
+    .contact-row-label { font-size: 0.63rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-55); margin-bottom: 4px; }
+    .contact-row-value { font-size: 0.88rem; color: var(--ink-80); line-height: 1.62; }
+    .contact-row-value a { color: var(--blue); }
+    .hours-title { font-size: 0.88rem; font-weight: 700; color: var(--gold); margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+    .hours-title [data-lucide] { color: var(--gold); }
+    .hours-row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--border-ink); font-size: 0.84rem; }
+    .hours-row:last-child { border-bottom: none; }
+    .hours-day { color: var(--ink-55); }
+    .hours-time { color: var(--ink-80); font-weight: 500; }
+    .response-note { margin-top: 20px; padding: 14px 16px; background: var(--blue-light); border: 1px solid var(--border); display: flex; gap: 10px; align-items: flex-start; }
+    .response-note [data-lucide] { color: var(--blue); flex-shrink: 0; margin-top: 1px; }
+    .response-note p { font-size: 0.75rem; color: var(--ink-55); line-height: 1.62; }
+
+    /* ═══════════════════════════════════════════
+       FORM (light)
+    ═══════════════════════════════════════════ */
+    .form-section { padding: 100px 0; background: #ffffff; }
+    .form-section .section-inner { max-width: 660px; }
+    .form-wrap { background: var(--bg); border: 1px solid var(--border-ink); border-top: 2px solid var(--blue); padding: 48px; margin-top: 48px; box-shadow: var(--shadow); }
+    .open-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(26,122,74,0.08); border: 1px solid rgba(26,122,74,0.22); padding: 6px 14px; font-size: 0.70rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--green); margin-bottom: 20px; }
+    .open-badge [data-lucide] { color: var(--green); }
+    .inv-limits-note { background: var(--blue-light); border: 1px solid var(--border); border-left: 2px solid var(--blue); padding: 14px 18px; margin-bottom: 22px; display: flex; gap: 10px; align-items: flex-start; }
+    .inv-limits-note [data-lucide] { color: var(--blue); flex-shrink: 0; margin-top: 1px; }
+    .inv-limits-note p { font-size: 0.76rem; color: var(--ink-80); line-height: 1.65; }
+    .inv-limits-note strong { color: var(--blue); }
+    .form-group { display: flex; flex-direction: column; gap: 7px; margin-bottom: 16px; }
+    .form-group label { font-size: 0.68rem; font-weight: 700; color: var(--ink-80); letter-spacing: 0.08em; text-transform: uppercase; }
+    .form-group input, .form-group select { background: #ffffff; border: 1px solid var(--border-ink); padding: 12px 15px; color: var(--ink); font-family: 'Inter', sans-serif; font-size: 0.92rem; transition: border-color var(--transition), box-shadow var(--transition); outline: none; -webkit-appearance: none; appearance: none; }
+    .form-group select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='rgba(11,25,41,0.4)' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; background-color: #ffffff; padding-right: 38px; }
+    .form-group input::placeholder { color: var(--ink-25); }
+    .form-group input:focus, .form-group select:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(0,97,194,0.10); }
+    .form-group select option { background: #ffffff; color: var(--ink); }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .btn-submit { width: 100%; padding: 15px; background: linear-gradient(135deg, var(--blue), var(--blue-dim)); color: #ffffff; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 0.98rem; border: none; cursor: pointer; transition: transform var(--transition), box-shadow var(--transition); box-shadow: 0 0 22px rgba(0,97,194,0.24); margin-top: 8px; letter-spacing: 0.02em; display: flex; align-items: center; justify-content: center; gap: 8px; }
+    .btn-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,97,194,0.40); }
+    .form-legal { margin-top: 14px; font-size: 0.68rem; color: var(--ink-55); text-align: center; line-height: 1.65; }
+    .form-legal a { color: var(--blue); }
+
+    /* ═══════════════════════════════════════════
+       FAQ (light)
+    ═══════════════════════════════════════════ */
+    .faq-section { padding: 100px 0; background: var(--bg); }
+    .faq-list { margin-top: 56px; display: flex; flex-direction: column; max-width: 800px; border: 1px solid var(--border-ink); box-shadow: var(--shadow); }
+    .faq-item { background: #ffffff; border-bottom: 1px solid var(--border-ink); overflow: hidden; transition: background var(--transition); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item.open { background: #f4f8ff; }
+    .faq-q { display: flex; justify-content: space-between; align-items: center; padding: 20px 26px; cursor: pointer; user-select: none; gap: 16px; }
+    .faq-q-text { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; font-size: 0.90rem; color: var(--ink); }
+    .faq-toggle { width: 26px; height: 26px; border: 1px solid var(--border-ink); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background var(--transition), border-color var(--transition); color: var(--blue); }
+    .faq-item.open .faq-toggle { background: var(--blue-light); border-color: var(--border); }
+    .faq-toggle [data-lucide] { transition: transform var(--transition); }
+    .faq-item.open .faq-toggle [data-lucide] { transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1); }
+    .faq-a-inner { padding: 18px 26px 24px; font-size: 0.86rem; color: var(--ink-80); line-height: 1.82; border-top: 1px solid var(--border-ink); }
+
+    /* ═══════════════════════════════════════════
+       RISK (light with gold tint)
+    ═══════════════════════════════════════════ */
+    .risk-section { padding: 80px 0; background: #fffbf0; border-top: 1px solid var(--border-gold); }
+    .risk-box { background: #ffffff; border: 1px solid var(--border-gold); border-top: 2px solid var(--gold); padding: 36px 40px; margin-top: 40px; box-shadow: var(--shadow-sm); }
+    .risk-box-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+    .risk-box-header [data-lucide] { color: var(--gold); flex-shrink: 0; }
+    .risk-box-header h3 { font-size: 0.78rem; font-weight: 700; color: var(--gold); letter-spacing: 0.09em; text-transform: uppercase; }
+    .risk-box p { font-size: 0.80rem; color: var(--ink-80); line-height: 1.88; margin-bottom: 12px; }
+    .risk-box p:last-child { margin-bottom: 0; }
+    .risk-label { font-size: 0.70rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-55); margin: 14px 0 8px; }
+    .risk-list { margin: 0 0 14px; }
+    .risk-list li { font-size: 0.80rem; color: var(--ink-80); line-height: 1.82; display: flex; align-items: flex-start; gap: 10px; padding: 4px 0; }
+    .risk-list li::before { content: '\203A'; color: var(--gold); font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
+
+    /* ═══════════════════════════════════════════
+       FOOTER (stays dark)
+    ═══════════════════════════════════════════ */
+    .footer { background: var(--dark); border-top: 1px solid rgba(255,255,255,0.08); padding: 60px 5% 32px; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .footer-brand-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+    .footer-mark { width: 36px; height: 36px; border: 1.5px solid rgba(255,255,255,0.28); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .footer-mark-inner { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 600; font-size: 1.1rem; color: rgba(255,255,255,0.80); }
+    .footer-brand-name { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 1.05rem; color: rgba(255,255,255,0.90); letter-spacing: 0.01em; }
+    .footer-brand-sub { display: block; font-size: 0.58rem; font-weight: 400; color: rgba(255,255,255,0.38); letter-spacing: 0.14em; text-transform: uppercase; margin-top: -2px; font-family: 'Plus Jakarta Sans', sans-serif; }
+    .footer-brand p { font-size: 0.78rem; color: rgba(255,255,255,0.45); line-height: 1.75; max-width: 280px; margin-bottom: 14px; }
+    .footer-finra { display: flex; align-items: center; gap: 7px; font-size: 0.72rem; color: rgba(255,255,255,0.40); flex-wrap: wrap; }
+    .footer-finra [data-lucide] { color: rgba(0,200,255,0.70); }
+    .footer-finra a { color: rgba(0,200,255,0.80); }
+    .footer-col h4 { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.70); margin-bottom: 16px; }
+    .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul li a { color: rgba(255,255,255,0.45); font-size: 0.78rem; transition: color var(--transition); display: flex; align-items: center; gap: 6px; }
+    .footer-col ul li a [data-lucide] { color: rgba(255,255,255,0.22); }
+    .footer-col ul li a:hover { color: rgba(255,255,255,0.80); opacity: 1; }
+    .footer-bottom { padding-top: 28px; display: flex; flex-direction: column; gap: 10px; }
+    .footer-disc { font-size: 0.68rem; color: rgba(255,255,255,0.26); line-height: 1.82; }
+    .footer-disc strong { color: rgba(255,255,255,0.40); }
+    .footer-copy { font-size: 0.70rem; color: rgba(255,255,255,0.20); }
+    .footer-copy a { color: rgba(255,255,255,0.32); }
+
+    /* ═══════════════════════════════════════════
+       ANIMATIONS
+    ═══════════════════════════════════════════ */
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes bounce { 0%,100% { transform: rotate(45deg) translateY(0); } 50% { transform: rotate(45deg) translateY(5px); } }
+    @keyframes pulse-dot { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.8); } }
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ═══════════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════════ */
+    @media (max-width: 900px) {
+      .opportunity-grid { grid-template-columns: 1fr; }
+      .opp-card { border-right: none; border-bottom: 1px solid var(--border-ink); }
+      .opp-card:last-child { border-bottom: none; }
+      .trust-cards { grid-template-columns: 1fr; }
+      .trust-card { border-right: none; border-bottom: 1px solid var(--border-ink); }
+      .trust-card:last-child { border-bottom: none; }
+      .steps-grid { grid-template-columns: 1fr 1fr; }
+      .step:nth-child(2) { border-right: none; }
+      .step:nth-child(3) { border-top: 1px solid var(--border-ink); }
+      .step:nth-child(4) { border-right: none; border-top: 1px solid var(--border-ink); }
+      .spv-grid, .contact-grid, .team-grid { grid-template-columns: 1fr; }
+      .team-card { border-right: none; border-bottom: 1px solid var(--border-ink); }
+      .team-card:last-child { border-bottom: none; }
+      .footer-top { grid-template-columns: 1fr; gap: 32px; }
+      .form-row { grid-template-columns: 1fr; }
+      .firm-bio, .opp-text { flex-direction: column; }
+      .progress-right { gap: 16px; }
+    }
+    @media (max-width: 640px) {
+      .navbar { padding: 0 4%; }
+      .nav-links { display: none; flex-direction: column; position: fixed; top: 72px; left: 0; right: 0; background: rgba(255,255,255,0.98); border-bottom: 1px solid var(--border-ink); padding: 24px 5%; gap: 20px; }
+      .nav-links a { color: var(--ink-80); }
+      .nav-links.open { display: flex; }
+      .nav-hamburger { display: flex; }
+      .steps-grid { grid-template-columns: 1fr; }
+      .step { border-right: none; border-bottom: 1px solid var(--border-ink); }
+      .step:last-child { border-bottom: none; }
+      .form-wrap { padding: 24px 18px; }
+      .trust-bar { gap: 14px; }
+      .trust-divider { display: none; }
+      .countdown-num { width: 58px; height: 58px; font-size: 1.4rem; }
+      .countdown-digits { gap: 6px; }
+      .cookie-banner { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="stars-canvas"></canvas>
+
+<!-- COOKIE CONSENT -->
+<div id="cookie-banner" class="cookie-banner hidden">
+  <p>Harwick Securities uses cookies to improve your experience and analyze traffic. By clicking "Accept," you consent to our use of cookies as described in our <a href="privacy.html">Privacy Policy</a>.</p>
+  <div class="cookie-btns">
+    <button class="btn-cookie-reject" onclick="rejectCookies()">Decline</button>
+    <button class="btn-cookie-accept" onclick="acceptCookies()">Accept Cookies</button>
+  </div>
+</div>
+
+
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <div class="nav-logo-mark">
+      <span class="nav-logo-mark-inner">HS</span>
+    </div>
+    <div class="nav-logo-wordmark">
+      <div>
+        <span class="logo-name-serif">Harwick</span><span class="logo-name-sans">&nbsp;Securities</span>
+      </div>
+      <span class="nav-logo-sub">FINRA Registered · CRD# 083738</span>
+    </div>
+  </div>
+  <div class="nav-links" id="navLinks">
+    <a href="#opportunity">Opportunity</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#team">Team</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+    <a href="#get-started" class="nav-cta">Reserve My Spot <i data-lucide="arrow-right" class="icon-xs"></i></a>
+  </div>
+  <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO (dark) -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      Open to All Investors · No Accreditation Required
+    </div>
+    <h1>SpaceX Has<br /><span class="highlight">Filed for IPO</span><br />Get In Early</h1>
+    <p class="hero-sub">
+      Secure your allocation at the locked-in price of <strong>$135/share</strong>. Own a piece of the future of space before public trading begins, starting at <strong>$1,500</strong>.
+    </p>
+    <div class="hero-btns">
+      <a href="#get-started" class="btn-primary">Start Investing <i data-lucide="arrow-right" class="icon-sm"></i></a>
+      <a href="#opportunity" class="btn-secondary">Learn More <i data-lucide="chevron-down" class="icon-sm"></i></a>
+    </div>
+    <div class="countdown-block">
+      <div class="countdown-label">Offering Closes In</div>
+      <div class="countdown-digits">
+        <div class="countdown-unit">
+          <div class="countdown-num" id="cd-days">00</div>
+          <div class="countdown-unit-label">Days</div>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-unit">
+          <div class="countdown-num" id="cd-hours">00</div>
+          <div class="countdown-unit-label">Hours</div>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-unit">
+          <div class="countdown-num" id="cd-mins">00</div>
+          <div class="countdown-unit-label">Minutes</div>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-unit">
+          <div class="countdown-num" id="cd-secs">00</div>
+          <div class="countdown-unit-label">Seconds</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- PROGRESS STRIP -->
+<div class="progress-strip">
+  <div class="progress-inner">
+    <div class="progress-meta">
+      <div class="progress-left">
+        <span class="progress-amount">$778,000</span>
+        <span class="progress-of">raised of</span>
+        <span class="progress-target">$1,000,000 target</span>
+      </div>
+      <div class="progress-right">
+        <div class="progress-stat">
+          <span class="progress-stat-val">77.8%</span>
+          <span class="progress-stat-label">Funded</span>
+        </div>
+        <div class="progress-stat">
+          <span class="progress-stat-val">383</span>
+          <span class="progress-stat-label">Investors</span>
+        </div>
+        <div class="progress-stat">
+          <span class="progress-stat-val gold">June 9, 2026</span>
+          <span class="progress-stat-label">Closing Date</span>
+        </div>
+      </div>
+    </div>
+    <div class="progress-bar-wrap">
+      <div class="progress-bar-fill" id="prog-bar"></div>
+    </div>
+  </div>
+</div>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item"><i data-lucide="landmark" class="icon-sm"></i> Harwick Securities · CRD# 083738</div>
+  <div class="trust-divider"></div>
+  <div class="trust-item"><i data-lucide="shield-check" class="icon-sm"></i> FINRA Member / SIPC</div>
+  <div class="trust-divider"></div>
+  <div class="trust-item"><i data-lucide="users" class="icon-sm"></i> Open to All Investors</div>
+  <div class="trust-divider"></div>
+  <div class="trust-item"><i data-lucide="external-link" class="icon-sm"></i> <a href="https://brokercheck.finra.org" target="_blank" rel="noopener">Verify on BrokerCheck</a></div>
+  <div class="trust-divider"></div>
+  <div class="trust-item"><i data-lucide="file-text" class="icon-sm"></i> Regulation A+</div>
+</div>
+
+<!-- PRESS BAR -->
+<div class="press-bar">
+  <div class="press-label">As Featured In</div>
+  <div class="press-logos">
+    <a href="https://www.foreignpolicyjournal.com/2026/06/04/spacex-nasdaq-spcx-sets-135-ipo-price-targets-1-77-trillion-valuation-as-musk-locks-in-voting-dominance/" target="_blank" rel="noopener" class="press-item">Foreign Policy Journal</a>
+    <a href="https://finance.yahoo.com/markets/stocks/articles/spacex-ipo-history-says-stock-090800842.html" target="_blank" rel="noopener" class="press-item">Yahoo Finance</a>
+    <a href="https://www.cnbc.com/2026/05/20/spacex-ipo-live-updates.html" target="_blank" rel="noopener" class="press-item">CNBC</a>
+    <a href="https://techcrunch.com/2025/12/09/spacex-reportedly-planning-2026-ipo-with-1-5t-valuation-target" target="_blank" rel="noopener" class="press-item">TechCrunch</a>
+    <a href="https://fortune.com/2025/12/13/spacex-ipo-plan-2026-secondary-offering-insider-share-sale-800-billion-valuation/" target="_blank" rel="noopener" class="press-item">Fortune</a>
+  </div>
+</div>
+
+<!-- OPPORTUNITY -->
+<section class="opportunity" id="opportunity">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-tag"><span class="section-tag-line"></span>The Opportunity</div>
+      <h2 class="section-title">The Most Anticipated<br />IPO of the Decade</h2>
+      <p class="section-desc">SpaceX is reshaping humanity's future. Until now, only institutions and ultra-high-net-worth individuals could access pre-IPO shares. We are changing that.</p>
+    </div>
+    <div class="opportunity-grid reveal">
+      <div class="opp-card">
+        <div class="opp-card-label">Current Private Valuation</div>
+        <div class="opp-card-value"><span class="accent">$350</span>B+</div>
+        <div class="opp-card-desc">Making SpaceX one of the world's most valuable private companies, ahead of most S&P 500 constituents.</div>
+      </div>
+      <div class="opp-card">
+        <div class="opp-card-label">Total Addressable Market</div>
+        <div class="opp-card-value"><span class="accent">$1.8</span>T</div>
+        <div class="opp-card-desc">Projected global space economy by 2035. Starlink alone could command a trillion-dollar broadband market.</div>
+      </div>
+      <div class="opp-card">
+        <div class="opp-card-label">Analyst IPO Outlook</div>
+        <div class="opp-card-value">2–5 <span class="accent">Yrs</span></div>
+        <div class="opp-card-desc">Analyst consensus points to a potential public offering within the next 2–5 years, with Starlink likely leading.</div>
+      </div>
+    </div>
+    <div class="opp-text reveal">
+      <div class="opp-text-icon"><i data-lucide="lightbulb" class="icon-lg"></i></div>
+      <div class="opp-text-body">
+        <h3>Why Pre-IPO Access Through an SPV?</h3>
+        <p>When a company goes public, early investors often see the most significant gains, but access to pre-IPO shares has historically been restricted to venture funds and family offices. Our Special Purpose Vehicle pools investor capital to collectively purchase SpaceX interests in the secondary market. You participate in potential upside before the public markets open, using the same structure institutional investors have used for decades.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-it-works" id="how-it-works">
+  <div class="section-inner">
+    <div class="reveal" style="text-align:center;">
+      <div class="section-tag" style="justify-content:center;"><span class="section-tag-line"></span>How It Works</div>
+      <h2 class="section-title">Four Steps to Ownership</h2>
+      <p class="section-desc" style="margin:0 auto;">A clear, straightforward path to pre-IPO ownership with no wealth manager required.</p>
+    </div>
+    <div class="steps-grid reveal">
+      <div class="step">
+        <div class="step-icon-box"><i data-lucide="user" class="icon-lg"></i></div>
+        <span class="step-num-tag">Step 01</span>
+        <h3>Create Your Account</h3>
+        <p>Register in minutes. No accreditation required. Identity verification is handled securely within the platform per FINRA AML requirements.</p>
+      </div>
+      <div class="step">
+        <div class="step-icon-box"><i data-lucide="scroll-text" class="icon-lg"></i></div>
+        <span class="step-num-tag">Step 02</span>
+        <h3>Review the Offering</h3>
+        <p>Read the full offering circular. Written in plain language. Know exactly what you are buying and all associated risks before you commit.</p>
+      </div>
+      <div class="step">
+        <div class="step-icon-box"><i data-lucide="trending-up" class="icon-lg"></i></div>
+        <span class="step-num-tag">Step 03</span>
+        <h3>Choose Your Amount</h3>
+        <p>Start from $1,500. Select the amount that fits your portfolio and transfer funds to the secure escrow account held by North Capital Trust Company.</p>
+      </div>
+      <div class="step">
+        <div class="step-icon-box"><i data-lucide="badge-check" class="icon-lg"></i></div>
+        <span class="step-num-tag">Step 04</span>
+        <h3>Receive Your Interest</h3>
+        <p>Upon fund close, receive your confirmed SPV interest certificate and full access to your investor dashboard and all documentation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT THE FUND -->
+<section class="about-spv" id="about-spv">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-tag"><span class="section-tag-line"></span>About the Fund</div>
+      <h2 class="section-title">Liftoff Partners Fund I</h2>
+      <p class="section-desc">A purpose-built investment vehicle designed to give all investors institutional-grade access to SpaceX.</p>
+    </div>
+    <div class="spv-grid">
+      <div class="spv-explain reveal">
+        <h3>What is an SPV?</h3>
+        <p>An SPV (Special Purpose Vehicle) is a legal entity created for a single investment purpose. When you invest through Liftoff Partners Fund I, your capital is pooled with other investors to collectively hold an indirect interest in SpaceX.</p>
+        <p>You do not hold SpaceX shares directly. You hold an interest in the SPV, which holds those interests on your behalf. This is the same structure used by institutional investors and family offices to access private markets.</p>
+        <p>Harwick Securities acts as placement agent. All investor funds are held in a segregated escrow account at North Capital Trust Company and are deployed only upon a successful fund closing. You will receive full confirmation and documentation of your SPV interest.</p>
+      </div>
+      <div class="spv-terms reveal">
+        <div class="term-row"><div class="term-label">Fund Name</div><div class="term-value">Liftoff Partners Fund I</div></div>
+        <div class="term-row"><div class="term-label">Placement Agent</div><div class="term-value">Harwick Securities · CRD# 083738</div></div>
+        <div class="term-row"><div class="term-label">Minimum Investment</div><div class="term-value gold">$1,500</div></div>
+        <div class="term-row"><div class="term-label">Investor Eligibility</div><div class="term-value">All U.S. Investors</div></div>
+        <div class="term-row"><div class="term-label">Target Close Date</div><div class="term-value blue">June 9, 2026</div></div>
+        <div class="term-row"><div class="term-label">Target Raise</div><div class="term-value">$1,000,000</div></div>
+        <div class="term-row"><div class="term-label">Management Fee</div><div class="term-value">1% Annually</div></div>
+        <div class="term-row"><div class="term-label">Carried Interest</div><div class="term-value">15%</div></div>
+        <div class="term-row"><div class="term-label">Expected Hold Period</div><div class="term-value">3–7 Years</div></div>
+        <div class="term-row"><div class="term-label">Offering Exemption</div><div class="term-value blue">Regulation A+ (Tier II)</div></div>
+        <div class="term-row"><div class="term-label">Escrow Agent</div><div class="term-value">North Capital Trust Company</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY INVEST -->
+<section class="why-invest" id="why-invest">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-tag"><span class="section-tag-line"></span>Why Invest With Us</div>
+      <h2 class="section-title">Built on Regulation,<br />Backed by Transparency</h2>
+      <p class="section-desc">Harwick Securities exists to break down the barriers between everyday investors and world-changing opportunities.</p>
+    </div>
+    <div class="trust-cards reveal">
+      <div class="trust-card">
+        <div class="trust-card-icon"><i data-lucide="landmark" class="icon-md"></i></div>
+        <h3>FINRA Registered</h3>
+        <p>Harwick Securities (CRD# 083738) operates as a FINRA-registered broker-dealer under full regulatory oversight. Verify our registration on BrokerCheck at any time.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-card-icon gold-icon"><i data-lucide="bar-chart-3" class="icon-md"></i></div>
+        <h3>Transparent Fees</h3>
+        <p>No hidden charges. 1% annual management fee and 15% carried interest, fully disclosed in the offering circular prior to any commitment you make.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-card-icon purple-icon"><i data-lucide="headphones" class="icon-md"></i></div>
+        <h3>Dedicated Support</h3>
+        <p>Every investor receives direct access to our investor relations team. Questions about your position, documents, or liquidity events are answered promptly.</p>
+      </div>
+    </div>
+    <div class="firm-bio reveal">
+      <div class="firm-bio-mark"><span class="firm-bio-mark-inner">HS</span></div>
+      <div class="firm-bio-text">
+        <h3>About Harwick Securities</h3>
+        <p>Harwick Securities is a FINRA-registered broker-dealer (CRD# 083738) focused on expanding access to private market investments for all investors. Founded by a team of former investment bankers and capital markets professionals, we believe access to transformative companies should not be gatekept by net worth. Acting as placement agent for Liftoff Partners Fund I, we structure, distribute, and administer this offering to provide institutional-caliber access to investors at every level. Harwick Securities is not affiliated with or endorsed by Space Exploration Technologies Corp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP TEAM -->
+<section class="team-section" id="team">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-tag"><span class="section-tag-line"></span>Leadership</div>
+      <h2 class="section-title">The Team<br />Behind the Fund</h2>
+      <p class="section-desc">Led by capital markets professionals with decades of combined experience in securities regulation, private placements, and investment banking.</p>
+    </div>
+    <div class="team-grid reveal">
+      <div class="team-card">
+        <div class="team-photo"><img src="team_ceo.png" alt="Chief Executive Officer" /></div>
+        <div class="team-card-body">
+          <div class="team-name">James R. Whitfield</div>
+          <div class="team-title">Chief Executive Officer &amp; Principal</div>
+          <div class="team-bio"><span style="color:var(--gold); font-size:0.72rem;">Bio pending — provide 3–4 sentences covering prior firms, years of experience, and FINRA/SEC credentials. Attorney must review before publishing.</span></div>
+          <div class="team-licenses">
+            <span class="license-badge">Series 7</span>
+            <span class="license-badge">Series 24</span>
+            <span class="license-badge">Series 63</span>
+          </div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="team_cco.png" alt="Chief Compliance Officer" /></div>
+        <div class="team-card-body">
+          <div class="team-name">Sandra L. Vause</div>
+          <div class="team-title">Chief Compliance Officer</div>
+          <div class="team-bio"><span style="color:var(--gold); font-size:0.72rem;">Bio pending — provide 3–4 sentences covering compliance background, FINRA examination history, and securities law expertise. Attorney must review before publishing.</span></div>
+          <div class="team-licenses">
+            <span class="license-badge">Series 24</span>
+            <span class="license-badge">Series 66</span>
+            <span class="license-badge">JD</span>
+          </div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="team_hcm.png" alt="Head of Capital Markets" /></div>
+        <div class="team-card-body">
+          <div class="team-name">[Full Name]</div>
+          <div class="team-title">Head of Capital Markets</div>
+          <div class="team-bio"><span style="color:var(--gold); font-size:0.72rem;">Bio pending — provide 3–4 sentences covering deal history, prior institutions, total capital raised, and sector expertise. Attorney must review before publishing.</span></div>
+          <div class="team-licenses">
+            <span class="license-badge">Series 7</span>
+            <span class="license-badge">Series 79</span>
+            <span class="license-badge">Series 63</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-tag"><span class="section-tag-line"></span>Contact</div>
+      <h2 class="section-title">Speak With Our<br />Investor Relations Team</h2>
+      <p class="section-desc">Questions before you invest? Our team is available during business hours to walk you through the offering.</p>
+    </div>
+    <div class="contact-grid reveal">
+      <div class="contact-card">
+        <div class="contact-row">
+          <i data-lucide="phone" class="icon-sm"></i>
+          <div>
+            <div class="contact-row-label">Phone</div>
+            <div class="contact-row-value">
+              <a href="tel:+13292039125">+1 (329) 203-9125</a><br />
+              <a href="https://wa.me/13292039125" target="_blank" rel="noopener" style="font-size:0.76rem; color:var(--green); display:inline-flex; align-items:center; gap:4px; margin-top:5px;"><i data-lucide="message-circle" style="width:13px;height:13px;color:var(--green);"></i>&nbsp;WhatsApp Available</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <i data-lucide="mail" class="icon-sm"></i>
+          <div>
+            <div class="contact-row-label">Email</div>
+            <div class="contact-row-value"><a href="mailto:investors@harwicksecurities.com">investors@harwicksecurities.com</a></div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <i data-lucide="map-pin" class="icon-sm"></i>
+          <div>
+            <div class="contact-row-label">Office Address</div>
+            <div class="contact-row-value">535 Fifth Avenue, Suite 1200<br />New York, NY 10017</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <i data-lucide="landmark" class="icon-sm"></i>
+          <div>
+            <div class="contact-row-label">Regulatory Registration</div>
+            <div class="contact-row-value">FINRA · CRD# 083738<br /><a href="https://brokercheck.finra.org" target="_blank" rel="noopener">BrokerCheck ↗</a></div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <i data-lucide="shield" class="icon-sm"></i>
+          <div>
+            <div class="contact-row-label">Escrow Agent</div>
+            <div class="contact-row-value">North Capital Trust Company</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-card gold-top">
+        <div class="hours-title"><i data-lucide="clock" class="icon-sm"></i> Investor Relations Hours</div>
+        <div class="hours-row"><span class="hours-day">Monday – Friday</span><span class="hours-time">9:00 AM – 6:00 PM ET</span></div>
+        <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">10:00 AM – 2:00 PM ET</span></div>
+        <div class="hours-row"><span class="hours-day">Sunday</span><span class="hours-time">Closed</span></div>
+        <div class="hours-row" style="border-top:1px solid var(--border-gold); margin-top:16px; padding-top:16px;">
+          <span class="hours-day" style="color:var(--ink-80);">Average Response Time</span>
+          <span class="hours-time" style="color:var(--gold); font-weight:700;">Under 2 Hours</span>
+        </div>
+        <div class="response-note">
+          <i data-lucide="info" class="icon-sm"></i>
+          <p>For inquiries outside of business hours, email our team and we will respond on the next business day. All investor communications are logged and retained per FINRA Rule 4511.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="form-section" id="get-started">
+  <div class="section-inner">
+    <div class="reveal" style="text-align:center;">
+      <div class="section-tag" style="justify-content:center;"><span class="section-tag-line"></span>Reserve Your Spot</div>
+      <h2 class="section-title">Secure Your Position<br />Before the Offering Closes</h2>
+      <p class="section-desc" style="margin:0 auto;">Only <span style="color:var(--gold); font-weight:600;">22.2%</span> of the offering remains. Submit your interest today.</p>
+    </div>
+    <div class="form-wrap reveal">
+      <div class="open-badge"><i data-lucide="check-circle" class="icon-xs"></i> Open to All Investors · No Accreditation Required</div>
+      <div class="inv-limits-note">
+        <i data-lucide="info" class="icon-sm"></i>
+        <p>This offering is made pursuant to <strong>Regulation A+ (Tier II)</strong>. There are no accreditation requirements or investment limits imposed on investors. All U.S. investors are eligible regardless of net worth or income.</p>
+      </div>
+      <form id="investorForm" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
+          </div>
+          <div class="form-group">
+            <label for="investmentRange">Investment Interest</label>
+            <select id="investmentRange" name="investmentRange" required>
+              <option value="" disabled selected>Select a range</option>
+              <option value="1500-5000">$1,500 – $5,000</option>
+              <option value="5000-25000">$5,000 – $25,000</option>
+              <option value="25000-100000">$25,000 – $100,000</option>
+              <option value="100000+">$100,000+</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn-submit" id="submitBtn">
+          Reserve My Spot <i data-lucide="arrow-right" class="icon-sm"></i>
+        </button>
+        <p class="form-legal">By submitting, you agree to receive communications from Harwick Securities regarding this offering. This is not an offer to sell or solicitation to buy securities. Review the full <a href="#">offering circular</a> before investing. Questions: <a href="mailto:investors@harwicksecurities.com">investors@harwicksecurities.com</a> · +1 (329) 203-9125 · Harwick Securities · FINRA CRD# 083738 · Member FINRA/SIPC.</p>
+      </form>
+      <div id="successMsg" style="display:none; text-align:center; padding:48px 0;">
+        <div style="display:flex; justify-content:center; margin-bottom:20px;">
+          <i data-lucide="check-circle-2" style="width:52px; height:52px; color:var(--blue);"></i>
+        </div>
+        <h3 style="font-size:1.3rem; margin-bottom:10px; color:var(--ink);">You're on the list.</h3>
+        <p style="color:var(--ink-80); font-size:0.9rem; max-width:360px; margin:0 auto; line-height:1.75;">Our team will be in touch shortly with the full offering circular and next steps. Thank you for your interest in Liftoff Partners Fund I.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-tag"><span class="section-tag-line"></span>FAQ</div>
+      <h2 class="section-title">Common Questions,<br />Straight Answers</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What is an SPV?</span><span class="faq-toggle"><i data-lucide="plus" class="icon-sm"></i></span></div>
+        <div class="faq-a"><div class="faq-a-inner">An SPV (Special Purpose Vehicle) is a legal entity created for a single investment purpose. When you invest through Liftoff Partners Fund I, your money is pooled with other investors to collectively hold an indirect interest in SpaceX. This is the same structure used by institutional investors to access private markets. You hold an interest in the SPV, which holds SpaceX interests on your behalf.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">When is SpaceX expected to start trading?</span><span class="faq-toggle"><i data-lucide="plus" class="icon-sm"></i></span></div>
+        <div class="faq-a"><div class="faq-a-inner">SpaceX officially filed for its IPO on June 4, 2026, and will trade on the NASDAQ under the ticker SPCX. Public trading is expected to begin shortly after the SEC review process is complete. Our SPV aims to secure shares at the set pre-trading price of $135/share.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What happens if the IPO is delayed or withdrawn?</span><span class="faq-toggle"><i data-lucide="plus" class="icon-sm"></i></span></div>
+        <div class="faq-a"><div class="faq-a-inner">While SpaceX has officially filed, market conditions or regulatory reviews can sometimes delay trading. If the IPO is withdrawn, your shares will remain held in the SPV until another liquidity event (such as a secondary market transaction or acquisition) occurs.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">How do I exit my investment?</span><span class="faq-toggle"><i data-lucide="plus" class="icon-sm"></i></span></div>
+        <div class="faq-a"><div class="faq-a-inner">Exits are typically triggered by a SpaceX IPO, acquisition, or a secondary market transaction facilitated by Harwick Securities. All SPV investors will be notified of any liquidity events. Early exits outside of these events are not guaranteed and may not be available. SPV interests are generally illiquid.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Is this investment risky?</span><span class="faq-toggle"><i data-lucide="plus" class="icon-sm"></i></span></div>
+        <div class="faq-a"><div class="faq-a-inner">Yes. All private market investments carry significant risk. Investing in SpaceX through this SPV involves illiquidity, market uncertainty, and the real possibility of losing your entire investment. We encourage all investors to carefully review the full offering documents and consult a qualified financial, legal, and tax advisor before investing.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What is the minimum investment?</span><span class="faq-toggle"><i data-lucide="plus" class="icon-sm"></i></span></div>
+        <div class="faq-a"><div class="faq-a-inner">You can participate starting at $1,500. This offering is structured under Regulation A+ (Tier II), which allows investments from all U.S. investors regardless of accreditation status, with no individual investment limits imposed by the exemption.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">How are investor funds held?</span><span class="faq-toggle"><i data-lucide="plus" class="icon-sm"></i></span></div>
+        <div class="faq-a"><div class="faq-a-inner">All investor funds are held in a segregated escrow account maintained by North Capital Trust Company, a qualified third-party custodian. Funds are deployed into the SPV only upon a successful closing. You will receive written confirmation and complete documentation of your SPV interest following the close date.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Who holds my money before the SPV closes?</span><span class="faq-toggle"><i data-lucide="plus" class="icon-sm"></i></span></div>
+        <div class="faq-a"><div class="faq-a-inner">Your funds are held in escrow by North Capital Trust Company, an independent qualified escrow agent. Funds are only released to the SPV upon a successful close on June 9, 2026. If the offering does not close for any reason, your funds will be returned to you in full. No fees charged.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What is North Capital Trust Company?</span><span class="faq-toggle"><i data-lucide="plus" class="icon-sm"></i></span></div>
+        <div class="faq-a"><div class="faq-a-inner">North Capital Trust Company is a registered transfer agent and escrow provider specializing in private securities offerings. They provide independent custody of investor funds, ensuring your money is protected and segregated throughout the subscription process until the SPV closing date of June 9, 2026.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What happens if the $1,000,000 target raise is not met?</span><span class="faq-toggle"><i data-lucide="plus" class="icon-sm"></i></span></div>
+        <div class="faq-a"><div class="faq-a-inner">If the minimum raise threshold is not met by the close date of June 9, 2026, all funds held in escrow by North Capital Trust Company will be returned to investors in full. No fees will be charged and you will be notified promptly. Your funds will be released without deduction.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RISK DISCLOSURE -->
+<section class="risk-section" id="disclosures">
+  <div class="section-inner">
+    <div class="section-tag" style="color:var(--gold);"><span class="section-tag-line" style="background:var(--gold);"></span>Important Disclosures</div>
+    <h2 class="section-title" style="font-size:1.5rem;">Risk Disclosure</h2>
+    <div class="risk-box">
+      <div class="risk-box-header">
+        <i data-lucide="triangle-alert" class="icon-md"></i>
+        <h3>Important Risk Disclosure — Please Read Carefully</h3>
+      </div>
+      <p>Investing in private companies involves a high degree of risk and is suitable only for investors who can afford to lose their entire investment. Past performance of any company, including Space Exploration Technologies Corp. ("SpaceX"), is not indicative of future results.</p>
+      <p>This offering is made through a Special Purpose Vehicle (SPV) acting as a pooled investment structure. Investors will hold an indirect interest in SpaceX and will not be direct shareholders of Space Exploration Technologies Corp.</p>
+      <div class="risk-label">Key risks include:</div>
+      <ul class="risk-list">
+        <li><strong>Illiquidity:</strong> no public market for SPV interests exists and no guarantee one will develop</li>
+        <li><strong>Market volatility:</strong> While SpaceX has filed for an IPO, public market trading prices can be highly volatile and may drop below the $135/share entry price</li>
+        <li><strong>Total loss of capital:</strong> you may lose your entire investment</li>
+        <li><strong>Dilution:</strong> future fundraising by SpaceX may dilute the value of existing interests</li>
+        <li><strong>Regulatory risk:</strong> changes in securities laws may affect the structure or value of your investment</li>
+        <li><strong>Fees:</strong> management and carried interest fees will reduce your net returns</li>
+      </ul>
+      <p>This offering is made pursuant to Regulation A+ (Tier II) under the Securities Act of 1933. This is not an offer to sell or a solicitation to buy securities in any jurisdiction where such activity is prohibited. Harwick Securities is acting solely as placement agent and is not affiliated with or endorsed by Space Exploration Technologies Corp.</p>
+      <p>Please review the full offering circular and consult with your financial, legal, and tax advisors before investing.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER (dark) -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-brand-logo">
+        <div class="footer-mark"><span class="footer-mark-inner">HS</span></div>
+        <div>
+          <span class="footer-brand-name">Harwick</span><span class="footer-brand-sub">Securities</span>
+        </div>
+      </div>
+      <p>Providing access to private market investment opportunities for all investors. FINRA-registered broker-dealer (CRD# 083738) acting as placement agent for Liftoff Partners Fund I.</p>
+      <div class="footer-finra">
+        <i data-lucide="landmark" class="icon-xs"></i>
+        FINRA CRD# 083738 &nbsp;·&nbsp;
+        <a href="https://brokercheck.finra.org" target="_blank" rel="noopener">BrokerCheck <i data-lucide="external-link" class="icon-xs"></i></a>
+        &nbsp;·&nbsp;
+        <a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany" target="_blank" rel="noopener">SEC EDGAR <i data-lucide="external-link" class="icon-xs"></i></a>
+        &nbsp;·&nbsp;
+        <a href="tel:+13292039125">+1 (329) 203-9125</a>
+        &nbsp;·&nbsp;
+        <a href="mailto:investors@harwicksecurities.com">investors@harwicksecurities.com</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Offering</h4>
+      <ul>
+        <li><a href="#opportunity"><i data-lucide="chevron-right" class="icon-xs"></i>The Opportunity</a></li>
+        <li><a href="#how-it-works"><i data-lucide="chevron-right" class="icon-xs"></i>How It Works</a></li>
+        <li><a href="#about-spv"><i data-lucide="chevron-right" class="icon-xs"></i>About the Fund</a></li>
+        <li><a href="#team"><i data-lucide="chevron-right" class="icon-xs"></i>Leadership Team</a></li>
+        <li><a href="#faq"><i data-lucide="chevron-right" class="icon-xs"></i>FAQ</a></li>
+        <li><a href="#disclosures"><i data-lucide="chevron-right" class="icon-xs"></i>Disclosures</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="privacy.html"><i data-lucide="chevron-right" class="icon-xs"></i>Privacy Policy</a></li>
+        <li><a href="terms.html"><i data-lucide="chevron-right" class="icon-xs"></i>Terms of Service</a></li>
+        <li><a href="form-crs.html"><i data-lucide="chevron-right" class="icon-xs"></i>Form CRS</a></li>
+        <li><a href="#"><i data-lucide="chevron-right" class="icon-xs"></i>Offering Circular</a></li>
+        <li><a href="https://brokercheck.finra.org" target="_blank" rel="noopener"><i data-lucide="chevron-right" class="icon-xs"></i>BrokerCheck</a></li>
+        <li><a href="#contact"><i data-lucide="chevron-right" class="icon-xs"></i>Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-disc"><strong>Not affiliated with or endorsed by Space Exploration Technologies Corp. (SpaceX).</strong> Harwick Securities is a registered broker-dealer (FINRA CRD# 083738) and SIPC member, acting solely as placement agent for Liftoff Partners Fund I. This website does not constitute an offer to sell or a solicitation of an offer to buy securities in any jurisdiction where such offer or solicitation is prohibited. All investments involve risk, including the possible loss of all capital invested. Past performance is not indicative of future results.</p>
+    <p class="footer-disc">This offering is made pursuant to Regulation A+ (Tier II) under the Securities Act of 1933. Before investing, please carefully read the full offering circular and all associated risk disclosures. Investing in private securities is speculative and illiquid; you may lose your entire investment. This page has been prepared for attorney review dated March 5, 2026 and has not been approved for public distribution.</p>
+    <p class="footer-copy">© 2026 Harwick Securities. All rights reserved. Member <a href="https://www.finra.org" target="_blank" rel="noopener">FINRA</a> / <a href="https://www.sipc.org" target="_blank" rel="noopener">SIPC</a>. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="form-crs.html">Form CRS</a></p>
+  </div>
+</footer>
+
+<script>
+  lucide.createIcons();
+
+  // Stars (visible through dark hero only)
+  const canvas = document.getElementById('stars-canvas');
+  const ctx = canvas.getContext('2d');
+  let stars = [];
+  function resizeCanvas() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+  function createStars(n) { stars = []; for (let i=0;i<n;i++) stars.push({ x:Math.random()*canvas.width, y:Math.random()*canvas.height, r:Math.random()*1.1, speed:Math.random()*0.003+0.001, phase:Math.random()*Math.PI*2 }); }
+  function drawStars(t) { ctx.clearRect(0,0,canvas.width,canvas.height); stars.forEach(s=>{ const a=0.22+0.48*(0.5+0.5*Math.sin(s.phase+t*s.speed*60)); ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,Math.PI*2); ctx.fillStyle=`rgba(255,255,255,${a})`; ctx.fill(); }); requestAnimationFrame(drawStars); }
+  resizeCanvas(); createStars(160); requestAnimationFrame(drawStars);
+  window.addEventListener('resize',()=>{ resizeCanvas(); createStars(160); });
+
+  // Navbar
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 80));
+
+  // Mobile menu
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('open');
+    document.getElementById('hamburger').classList.toggle('active');
+  }
+  document.querySelectorAll('#navLinks a').forEach(a => a.addEventListener('click', () => {
+    document.getElementById('navLinks').classList.remove('open');
+    document.getElementById('hamburger').classList.remove('active');
+  }));
+
+  // Countdown
+  const CLOSE_DATE = new Date('2026-06-10T03:59:59Z');
+  function pad(n) { return String(n).padStart(2,'0'); }
+  function tick() {
+    const diff = CLOSE_DATE - new Date();
+    if (diff <= 0) { ['cd-days','cd-hours','cd-mins','cd-secs'].forEach(id => document.getElementById(id).textContent = '00'); return; }
+    document.getElementById('cd-days').textContent  = pad(Math.floor(diff / 86400000));
+    document.getElementById('cd-hours').textContent = pad(Math.floor((diff % 86400000) / 3600000));
+    document.getElementById('cd-mins').textContent  = pad(Math.floor((diff % 3600000) / 60000));
+    document.getElementById('cd-secs').textContent  = pad(Math.floor((diff % 60000) / 1000));
+  }
+  tick(); setInterval(tick, 1000);
+
+  // Progress bar
+  const RAISED = 778000, TARGET = 1000000;
+  const pct = (RAISED / TARGET * 100).toFixed(1);
+  setTimeout(() => { document.getElementById('prog-bar').style.width = pct + '%'; }, 400);
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) { setTimeout(() => entry.target.classList.add('visible'), i * 70); observer.unobserve(entry.target); }
+    });
+  }, { threshold: 0.07 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // FAQ
+  function toggleFaq(el) {
+    const item = el.closest('.faq-item');
+    const answer = item.querySelector('.faq-a');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => { i.classList.remove('open'); i.querySelector('.faq-a').style.maxHeight = '0'; });
+    if (!isOpen) { item.classList.add('open'); answer.style.maxHeight = answer.scrollHeight + 'px'; }
+  }
+
+  // Form
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    btn.innerHTML = 'Submitting&hellip;';
+    btn.disabled = true;
+    // TODO: POST to your CRM / backend endpoint here
+    setTimeout(() => {
+      document.getElementById('investorForm').style.display = 'none';
+      document.getElementById('successMsg').style.display = 'block';
+      lucide.createIcons();
+    }, 1200);
+  }
+
+  // Cookie consent
+  function initCookies() {
+    if (localStorage.getItem('hs-cookie-consent')) return;
+    setTimeout(() => document.getElementById('cookie-banner').classList.remove('hidden'), 2200);
+  }
+  function acceptCookies() {
+    localStorage.setItem('hs-cookie-consent', 'accepted');
+    document.getElementById('cookie-banner').classList.add('hidden');
+    // TODO: Initialize analytics after consent
+  }
+  function rejectCookies() {
+    localStorage.setItem('hs-cookie-consent', 'rejected');
+    document.getElementById('cookie-banner').classList.add('hidden');
+  }
+  initCookies();
+</script>
+</body>
+</html>
